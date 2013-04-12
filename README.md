@@ -1,4 +1,4 @@
 my_devenv
 =========
 
-mysql dev env configration 
+my dev env configration 
