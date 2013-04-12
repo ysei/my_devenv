@@ -9,7 +9,7 @@ imagemagic
 wget ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-6.8.4-8.tar.gz
 tar xzf ImageMagick-6.8.4-8.tar.gz
 
-apt-get install libmagic-dev
+apt-get install libmagickwand-dev
 
 
 3. php5 　& mysql :
