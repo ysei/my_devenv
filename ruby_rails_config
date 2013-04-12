@@ -1,19 +1,41 @@
 ruby and rails dev config
+$ sudo apt-get install git-core git-gui git-doc
+$ sudo apt-get install curl
+$ sudo apt-get install ssh
+##config git and ssh 
+$ ssh-keygen -t rsa -C "your_email@youremail.com"
+$ cat id_rsa.pub 
+## copy the file content to github.com -->account setting -->ssh management 
+$ ssh -T git@github.com
+
+$ git config --global user.name "<your name>"
+$ git config --global user.email "<your email>"
+$ git config --global alias.co checkout
+$ git config --global alias.cl clone
+$ git config --global alias.cm commit
+
+
+
+
+
+
 1. install rbevn 
     https://github.com/sstephenson/rbenv 
-# git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
-# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-# echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-# exec $SHELL -l
+$ git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+$ exec $SHELL -l
 
 install ruby-build
     https://github.com/sstephenson/ruby-build
-# git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+$ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-# rbenv rehash
-# rbenv install 1.9.3-p392
-# rbenv shell 1.9.3-p392 
-# rbenv local.9.3-p392 
-# rbenv global 1.9.3-p392 
+$ rbenv rehash
+$ rbenv install 1.9.3-p392
+$ rbenv shell 1.9.3-p392 
+$ rbenv local.9.3-p392 
+$ rbenv global 1.9.3-p392 
+
+
 2. 
 
