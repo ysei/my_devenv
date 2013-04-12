@@ -1,0 +1,28 @@
+ubuntu notes
+1. basic tools
+apt-get install vim htop iotop tmux git svn 
+
+2. dev tools
+apt-get install autoconf automake autotools-dev binutils bison build-essential cpp cpp-4.6 dpkg-dev fakeroot g++ g++-4.6 gcc gcc-4.6 git git-core   git-man libalgorithm-diff-perl libc-bin libc6 libsqlite3-0 libssl1.0.0 libxml2 libalgorithm-diff-xs-perl libalgorithm-merge-perl libbison-dev libc-dev-bin libc6-dev libdpkg-perl  liberror-perl libgomp1 libmpc2 libmpfr4 libncurses5-dev libquadmath0 libreadline6-dev libsqlite3-dev libssl-dev libssl-doc  libstdc++6-4.6-dev libtinfo-dev libxml2-dev libxslt1-dev libxslt1.1 libyaml-0-2 libyaml-dev linux-libc-dev m4 make manpages-dev  sqlite3 zlib1g-dev
+
+3. php5 　& mysql :
+1) sudo apt-get install  mysql-server 
+vi /etc/mysql/my.cnf (set the default character):
+[mysql]
+default-character-set = utf8
+
+[client]
+default-character-set = utf8
+
+[mysqld]
+collation-server = utf8_unicode_ci
+init-connect='SET NAMES utf8'
+character-set-server = utf8
+
+2) sudo apt-get install php5-cli php5-common php5-cgi php-pear  php5-mysql
+    
+4. MYSQL config
+    
+5. ruby on rails　
+    
+    
