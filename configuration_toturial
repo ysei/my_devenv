@@ -34,6 +34,8 @@ character-set-server = utf8
 5. ruby on rails　
 
 6. github  ssh  key 
+#https://help.github.com/articles/generating-ssh-keys 
+#https://help.github.com/articles/set-up-git
 cd ~/.ssh
 #generate the ssh key 
 ssh-keygen -t rsa -C "Email Address"
