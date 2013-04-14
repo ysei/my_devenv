@@ -40,12 +40,15 @@ $ gem install  bundler
 git clone git://github.com/redmine/redmine.git
 cd redmine 
 cp config/database.yml.example  config/database.yml
-bundle install 
-
 # vi Gemfile 
 gem 'puma'
 gem 'thin'
 gem 'unicorn'
+bundle install 
+
+rake db:create RAILS_ENV=production
+rake db:migrate RAILS_ENV=production
+
 
 3. use Git + Capstranio/mina + thin/puma/Unicorn/Passenger + Nginx  
 
