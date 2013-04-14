@@ -29,12 +29,20 @@ character-set-server = utf8
 2) sudo apt-get install php5-cli php5-common php5-cgi php-pear  php5-mysql php5-fpm php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
 
 
-
-
-
-
 4. MYSQL config
     
 5. ruby on rails　
-    
+
+6. github ssh  key 
+cd ~/.ssh
+#generate the ssh key 
+ssh-keygen -t rsa -C "Email Address"
+clip < ~/.ssh/id_rsa.pub
+# to test the github connection
+ssh -T git@github.com 
+git config --global user.name "Your Name Here"
+git config --global user.email "your_email@example.com"
+7. 
+
+
     
