@@ -50,6 +50,12 @@ rake db:create RAILS_ENV=production
 rake db:migrate RAILS_ENV=production
 rake generate_secret_token RAILS_ENV=production
 
-3. use Git + Capstranio/mina + thin/puma/Unicorn/Passenger + Nginx  
+3. gtilab
+#gitlab.com
+#https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md
+#https://github.com/gitlabhq/gitlabhq/blob/5-0-stable/doc/install/installation.md
+
+
+4. use Git + Capstranio/mina + thin/puma/Unicorn/Passenger + Nginx  
 
 
