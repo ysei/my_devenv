@@ -1,4 +1,11 @@
-ruby and rails dev config
+ruby doc
+http://www.rubydoc.info/stdlib/core/frames
+http://apidock.com/
+http://railsapi.com/
+
+
+
+==ruby and rails dev config==
 $ sudo apt-get install git-core git-gui git-doc
 $ sudo apt-get install curl
 $ sudo apt-get install ssh
@@ -92,4 +99,11 @@ sudo apt-get update
 sudo apt-get install chromium-browser
 
 5. use Git + Capstranio/mina + thin/puma/Unicorn/Passenger + Nginx  
+https://gist.github.com/kewinwang/5394510
+http://sirupsen.com/setting-up-unicorn-with-nginx/
+http://sleekd.com/general/configuring-nginx-and-unicorn/
+http://recipes.sinatrarb.com/p/deployment/nginx_proxied_to_unicorn
+
+
+
 
