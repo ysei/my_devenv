@@ -56,6 +56,40 @@ rake generate_secret_token RAILS_ENV=production
 #https://github.com/gitlabhq/gitlabhq/blob/5-0-stable/doc/install/installation.md
 
 
-4. use Git + Capstranio/mina + thin/puma/Unicorn/Passenger + Nginx  
+4. ruby china
+git clone git://github.com/ruby-china/ruby-china.git
+cd ruby-china
+ruby setup.rb
+# ensure that memcached has started up
+rails s
+i# Sidekiq
+# ensure that redis has started up
+bundle exec sidekiq -C config/sidekiq.yml
 
+##Testing
+bundle exec rspec spec
+###to prepare all the config files and start essential services.
+
+##JavaScript Testing
+###Start test server using:
+
+bundle exec rake jasmine
+###By default, jasmine picks port 8888. After the server is started, open the prompted URL in browser. The port can be changed by setting JASMINE_PORT:
+
+JASMINE_PORT=123456 bundle exec rake jasmine
+###Chrome is used as the default driver, please download proper driver for your system from http://code.google.com/p/chromedriver/downloads/list. Set environment variable JASMINE_BROWSER to use other browsers, e.g., firefox:
+
+JASMINE_PORT=123456 JASMINE_PORT=firefox bundle exec rake jasmine
+##Headless Testing
+
+###iHeadless testing should use following command:
+
+bundle exec rake jasmine:ci
+#On the CI server, Xvfb should be started first. See http://blog.shortforgilbert.com/44181761 but install chromium-browser instead. E.g., for Ubuntu server:
+
+sudo apt-add-repository ppa:chromium-daily/ppa
+sudo apt-get update
+sudo apt-get install chromium-browser
+
+5. use Git + Capstranio/mina + thin/puma/Unicorn/Passenger + Nginx  
 
