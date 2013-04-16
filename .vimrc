@@ -23,3 +23,5 @@ set wrap
 if $TERM !="linux"
   set mouse=a  
 endif
+" 把F8 映射到NERDTree插件 git clone git://github.com/kewinwang/vim_config.git
+"map <F8> :NERDTree<CR>
