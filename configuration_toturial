@@ -1,21 +1,24 @@
 ubuntu notes
 1. basic tools
-apt-get install vim htop iotop tmux git svn 
+$ apt-get install vim htop iotop tmux git svn 
 
 2. dev tools
-apt-get install autoconf automake autotools-dev binutils bison build-essential cpp cpp-4.6 dpkg-dev fakeroot g++ g++-4.6 gcc gcc-4.6 git git-core   git-man libalgorithm-diff-perl libc-bin libc6 libsqlite3-0 libssl1.0.0 libxml2 libalgorithm-diff-xs-perl libalgorithm-merge-perl libbison-dev libc-dev-bin libc6-dev libdpkg-perl  liberror-perl libgomp1 libmpc2 libmpfr4 libncurses5-dev libquadmath0 libreadline6-dev libsqlite3-dev libssl-dev libssl-doc  libstdc++6-4.6-dev libtinfo-dev libxml2-dev libxslt1-dev libxslt1.1 libyaml-0-2 libyaml-dev linux-libc-dev m4 make manpages-dev  sqlite3 zlib1g-dev
+$ apt-get install autoconf automake autotools-dev binutils bison build-essential cpp cpp-4.6 dpkg-dev fakeroot g++ g++-4.6 gcc gcc-4.6 git git-core   git-man libalgorithm-diff-perl libc-bin libc6 libsqlite3-0 libssl1.0.0 libxml2 libalgorithm-diff-xs-perl libalgorithm-merge-perl libbison-dev libc-dev-bin libc6-dev libdpkg-perl  liberror-perl libgomp1 libmpc2 libmpfr4 libncurses5-dev libquadmath0 libreadline6-dev libsqlite3-dev libssl-dev libssl-doc  libstdc++6-4.6-dev libtinfo-dev libxml2-dev libxslt1-dev libxslt1.1 libyaml-0-2 libyaml-dev linux-libc-dev m4 make manpages-dev  sqlite3 zlib1g-dev
 
 ==imagemagic 
-    1) 
-    wget ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-6.8.4-8.tar.gz
-    tar xzf ImageMagick-6.8.4-8.tar.gz
+1) 
+$ wget ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-6.8.4-8.tar.gz
+$ tar xzf ImageMagick-6.8.4-8.tar.gz
     
 OR 
-    2) apt-get install imagemagick libmagickwand-dev
+2)
+$ apt-get install imagemagick libmagickwand-dev
 
 
 3. php5 　& mysql :
-1) sudo apt-get install  mysql-server libmysqlclient-dev 
+1)
+$ sudo apt-get install  mysql-server libmysqlclient-dev 
+
 ==vi /etc/mysql/my.cnf (set the default character):
 
 [mysql]
@@ -29,7 +32,8 @@ collation-server = utf8_unicode_ci
 init-connect='SET NAMES utf8'
 character-set-server = utf8
 
-2) sudo apt-get install php5-cli php5-common php5-cgi php-pear  php5-mysql php5-fpm php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
+2)
+$ sudo apt-get install php5-cli php5-common php5-cgi php-pear  php5-mysql php5-fpm php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
 
 
 4. MYSQL config
@@ -37,23 +41,23 @@ character-set-server = utf8
 5. ruby on rails　
 
 6. github  ssh  key 
-https://help.github.com/articles/generating-ssh-keys 
-https://help.github.com/articles/set-up-git
-cd ~/.ssh
-==generate the ssh key 
-ssh-keygen -t rsa -C "Email Address"`
-clip < ~/.ssh/id_rsa.pub
-to test the github connection
-ssh -T git@github.com 
-git config --global user.name "Your Name Here"
-git config --global user.email "your_email@example.com"
-==The last option we need to set will tell git that you don't want to type your username and password every time you talk to a remote server.
+== https://help.github.com/articles/generating-ssh-keys 
+== https://help.github.com/articles/set-up-git
+$ cd ~/.ssh
+== generate the ssh key 
+$ ssh-keygen -t rsa -C "Email Address"`
+$ clip < ~/.ssh/id_rsa.pub
+== to test the github connection
+$ ssh -T git@github.com 
+$ git config --global user.name "Your Name Here"
+$ git config --global user.email "your_email@example.com"
+== The last option we need to set will tell git that you don't want to type your username and password every time you talk to a remote server.
 
-git config --global credential.helper cache
-git config --global credential.helper 'cache --timeout=3600'
+$ git config --global credential.helper cache
+$ git config --global credential.helper 'cache --timeout=3600'
 7. ref
-http://markdown.tw/
-http://www.yangzhiping.com/tech/mac-dev.html
-http://www.yangzhiping.com/tech/mac-software.html
-http://www.yangzhiping.com/tech/octopress.html
-https://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md
+== http://markdown.tw/
+== http://www.yangzhiping.com/tech/mac-dev.html
+== http://www.yangzhiping.com/tech/mac-software.html
+== http://www.yangzhiping.com/tech/octopress.html
+== https://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md
