@@ -52,6 +52,7 @@ $ ssh -T git@github.com
 $ git config --global user.name "Your Name Here"
 $ git config --global user.email "your_email@example.com"
 == Set your git editor with 
+== http://blog.macromates.com/2005/textmate-shell-utility-tmmate/
 $ git config --global core.editor "mate -w"
 
 == The last option we need to set will tell git that you don't want to type your username and password every time you talk to a remote server.
