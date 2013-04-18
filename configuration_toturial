@@ -49,6 +49,7 @@ git config --global user.email "your_email@example.com"
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 7. 
-
-
-    
+http://markdown.tw/
+http://www.yangzhiping.com/tech/mac-dev.html
+http://www.yangzhiping.com/tech/mac-software.html
+http://www.yangzhiping.com/tech/octopress.html
