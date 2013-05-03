@@ -1,0 +1,53 @@
+DevOps：
+fai / puppet/ nagios/ zabbix / amanda / libvirt/ virsh 
+xen / openstack /cobbler
+
+
+insert into sina_service_unit (ID,sl1,sl1_abbr) values(1,"CDN","CDN");
+
+https://gist.github.com/1959722
+
+==========================================================
+LINKS
+
+RailsCast: http://railscasts.com/
+Rails Tutorials: http://ruby.railstutorial.org/
+Rails Guides: http://guides.rubyonrails.org
+Ruby Inside: http://www.rubyinside.com/
+Rails: http://www.rubyonrails.org
+
+RVM: http://beginrescueend.com/
+Bundler: http://gembundler.com/
+Ruby: http://www.ruby-lang.org/en/
+JRuby: http://jruby.org/
+Try Ruby: http://tryruby.org/
+Rubygems: http://rubygems.org/
+
+CoffeeScript: http://coffeescript.org/
+Cookbook: http://coffeescriptcookbook.com/
+Smooth-CoffeeScript: http://autotelicum.github.com/Smooth-CoffeeScript/
+http://pragprog.com/book/tbcoffee/coffeescript
+Sass: http://sass-lang.com/
+pjax: http://pjax.heroku.com/
+
+Passenger/modRails: http://www.modrails.com/
+Nginx: http://nginx.org/
+Unicorn: http://unicorn.bogomips.org/
+ApacheBench: http://httpd.apache.org/docs/2.0/programs/ab.html
+
+
+SCRIPTS
+
+# Install RVM: 
+bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+
+# Install MRI 1.9.3
+rvm install 1.9.3
+
+# Install rails
+gem install rails
+
+# Apache Bench
+ab -n 1000 -c 20 http://server/
+
+=============================================================
